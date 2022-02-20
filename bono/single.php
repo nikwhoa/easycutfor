@@ -71,7 +71,7 @@ get_header();
 
     <?php endif; ?>
 
-    <div id="primary" class="content-area" itemscope itemtype="http://schema.org/Article">
+    <div id="primary" class="content-area m" itemscope itemtype="http://schema.org/Article">
         <main id="main" class="site-main article-card">
 
             <?php

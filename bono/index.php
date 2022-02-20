@@ -8,7 +8,8 @@ $home_constructor = theme_container()->get( HomeConstructor::class );
 
 get_header();
 ?>
-    <div id="primary" class="content-area">
+
+    <div id="primary" class="content-area s">
         <main id="main" class="site-main">
 
             <?php

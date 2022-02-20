@@ -17,7 +17,7 @@ $advertising = theme_container()->get( Advertising::class );
     <?php $core->the_option( 'code_head' ) ?>
 </head>
 <body <?php body_class(); ?>>
-    
+
 <?php theme_container()->get( ThemeProvider::class )->check(); ?>
 
 <?php if ( function_exists( 'wp_body_open' ) ) {

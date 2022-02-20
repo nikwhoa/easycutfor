@@ -24,7 +24,7 @@ get_header();
 
 if ( $home_constructor->do_output_constructor() ) {
     ?>
-    <div id="primary" class="content-area">
+    <div id="primary" class="content-area s">
         <main id="main" class="site-main">
 
 

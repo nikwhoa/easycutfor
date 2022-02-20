@@ -1,4 +1,5 @@
-﻿/*
+@charset "UTF-8";
+/*
 Theme Name: Bono Child
 Theme URI: https://wpshop.ru/themes/bono
 Author: WPShop.ru
@@ -6,7 +7,56 @@ Author URI: http://wpshop.ru/
 Template: bono
 Version: 1.0.0
 */
-
 /* Below you can add your CSS styles */
 /* Ниже Вы можете добавить свои CSS стили */
+* {
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+}
 
+h1 {
+  font-family: inherit;
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-family: inherit;
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-family: inherit;
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-family: inherit;
+  font-size: 1.1rem;
+}
+
+span, ul, li, ol, a, p, table, button {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.bono_child__btn {
+  cursor: pointer;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  background: #282828;
+  border: 1px solid #282828;
+  color: #F8F8F8;
+  padding: 0.5rem 2.5rem;
+}
+.bono_child__btn:hover {
+  background: #ffffff;
+  color: #282828;
+}
+.bono_child__btn:disabled {
+  background: #ECECEC;
+  color: #999999;
+  border: none;
+}
+
+/*# sourceMappingURL=style.css.map */

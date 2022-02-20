@@ -37,7 +37,7 @@ $button_text = apply_filters(
 );
 
 ?>
-<div class="swiper-slide card-slider card-slider--type-<?php echo esc_attr( $_item['type'] ) ?>">
+<div class="swiper-slide ss card-slider card-slider--type-<?php echo esc_attr( $_item['type'] ) ?>">
     <a href="<?php echo $url ?>" class="card-slider-wrap">
         <div class="card-slider__image">
             <?php woocommerce_subcategory_thumbnail( $_category ) ?>

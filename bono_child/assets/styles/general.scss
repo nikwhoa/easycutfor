@@ -1,0 +1,51 @@
+$_black: #282828;
+$_gray: #6A6A6A;
+$_gray_bright: #999999;
+$_gray_bright-second: #ECECEC;
+$_white: #F8F8F8;
+
+* {
+    font-family: 'Nunito', sans-serif;
+    box-sizing: border-box;
+}
+h1 {
+    font-family: inherit;
+    font-size: 3.5rem;
+}
+h2 {
+    font-family: inherit;
+    font-size: 2.5rem;
+}
+h3 {
+    font-family: inherit;
+    font-size: 1.75rem;
+}
+h4 {
+    font-family: inherit;
+    font-size: 1.1rem;
+}
+span, ul, li, ol, a, p, table, button {
+    font-family: inherit;
+    font-size: 1rem;
+}
+.bono_child {
+    &__btn {
+        cursor: pointer;
+        line-height: 140%;
+        text-align: center;
+        text-transform: uppercase;
+        background: $_black;
+        border: 1px solid $_black;
+        color: $_white;
+        padding: .5rem 2.5rem;
+        &:hover {
+            background: #ffffff;
+            color: $_black;
+        }
+        &:disabled {
+            background: $_gray_bright-second;
+            color: $_gray_bright;
+            border: none;
+        }
+    }
+}

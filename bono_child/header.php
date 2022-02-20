@@ -95,7 +95,7 @@ if (window.location.pathname.indexOf('/checkout/order-received/') !== -1) {setTi
     for (var i = 0; i < document.getElementsByClassName('product-category').length; i++) {
             if (document.getElementsByClassName('product-category')[i].getElementsByTagName('img')[0].getAttribute('alt') == 'Life clinic') {
                 document.getElementsByClassName('product-category')[i].outerHTML = '';
-            }   
+            }
         }
 		setTimeout(shopLoopEe, 50);
 	}
@@ -113,12 +113,12 @@ if (window.location.pathname.substr(0, 9) == '/shop/') {
         for (var i = 0; i < document.getElementsByClassName('product-category').length; i++) {
             if (document.getElementsByClassName('product-category')[i].getElementsByTagName('img')[0].getAttribute('alt') == 'Second hand') {
                 document.getElementsByClassName('product-category')[i].outerHTML = '';
-            }   
+            }
         }
         for (var i = 0; i < document.getElementsByClassName('product-category').length; i++) {
             if (document.getElementsByClassName('product-category')[i].getElementsByTagName('img')[0].getAttribute('alt') == 'Life clinic') {
                 document.getElementsByClassName('product-category')[i].outerHTML = '';
-            }   
+            }
         }
         for (var i = 0; i < document.getElementsByClassName('shop-item').length; i++) {
                 if (document.getElementsByClassName('shop-item')[i].getElementsByTagName('a')[1].innerHTML == 'Life Clinic' || document.getElementsByClassName('shop-item')[i].getElementsByTagName('a')[1].innerHTML == 'Life clinic') {
@@ -141,12 +141,12 @@ if (window.location.pathname.substr(0, 9) == '/en/shop/') {
         for (var i = 0; i < document.getElementsByClassName('product-category').length; i++) {
             if (document.getElementsByClassName('product-category')[i].getElementsByTagName('img')[0].getAttribute('alt') == 'Second hand') {
                 document.getElementsByClassName('product-category')[i].outerHTML = '';
-            }   
+            }
         }
         for (var i = 0; i < document.getElementsByClassName('product-category').length; i++) {
             if (document.getElementsByClassName('product-category')[i].getElementsByTagName('img')[0].getAttribute('alt') == 'Life clinic') {
                 document.getElementsByClassName('product-category')[i].outerHTML = '';
-            }   
+            }
         }
         for (var i = 0; i < document.getElementsByClassName('shop-item').length; i++) {
                 if (document.getElementsByClassName('shop-item')[i].getElementsByTagName('a')[1].innerHTML == 'Life Clinic' || document.getElementsByClassName('shop-item')[i].getElementsByTagName('a')[1].innerHTML == 'Life clinic') {
@@ -208,7 +208,7 @@ if (window.location.pathname == '/ee/cart/') {
 					document.getElementsByClassName('product-subtotal')[i].innerHTML = '<div class="cartCustomElem" style="display: inline-block;float: left; font-weight: bold;">Vahesumma:</div>'+document.getElementsByClassName('product-subtotal')[i].innerHTML;
 					}
 				}
-                
+
                 if (document.getElementsByClassName('woocommerce-shipping-totals shipping')[0].getElementsByTagName('th')[0] !== undefined) {
                 	document.getElementsByClassName('woocommerce-shipping-totals shipping')[0].getElementsByTagName('th')[0].innerHTML = 'Tarne';
                 }
@@ -324,23 +324,23 @@ function orderRecieved() {
 function checkoutLoopEe4() {
 	if (window.location.pathname == '/ee/checkout/') {
 		if (document.getElementById('place_order') !== undefined) {
-		    
+
 		    if (document.getElementsByClassName('woocommerce-shipping-totals shipping')[0] !== undefined) {
 		    	document.getElementsByClassName('woocommerce-shipping-totals shipping')[0].getElementsByTagName('th')[0].innerHTML = 'Tarne';
 		    }
-		    
+
 			if (document.getElementsByClassName('montonio-payments-country-dropdown')[0] !== undefined) {
 				document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[0].innerHTML = 'Finland';
 		    	document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[1].innerHTML = 'Latvia';
 		    	document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[2].innerHTML = 'Estonia';
 		    	document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[3].innerHTML = 'Lithuania';
 			}
-		    
+
 		    // document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[0].innerHTML = 'Finland';
 		    // document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[1].innerHTML = 'Latvia';
 		    // document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[2].innerHTML = 'Estonia';
 		    // document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[3].innerHTML = 'Lithuania';
-		    
+
 		    if (document.getElementsByClassName('wc_payment_method payment_method_montonio_payments')[0] !== undefined) {
 		    	document.getElementsByClassName('wc_payment_method payment_method_montonio_payments')[0].getElementsByTagName('label')[0].innerHTML = 'Maksmine panga kaudu'+document.getElementById('montonio-payments-checkout-logo').outerHTML;
 		    }
@@ -400,7 +400,7 @@ function checkoutLoopEe2() {
 if (window.location.pathname.substr(0, 13) == '/ee/checkout/') {
 	function checkoutLoopEe() {
 	    setTimeout(checkoutLoopEe, 5);
-	    
+
             if  (document.getElementsByClassName('woocommerce-error').length > 0) {
                 for (var i = 0; i < document.getElementsByClassName('woocommerce-error')[0].getElementsByTagName('li').length; i++) {
                     if  (document.getElementsByClassName('woocommerce-error')[0].getElementsByTagName('li')[i].innerText == 'Выберите место для доставки.') {
@@ -424,7 +424,7 @@ if (window.location.pathname.substr(0, 13) == '/ee/checkout/') {
 
                 }
             }
-	    
+
 	    if  (document.getElementsByClassName('page-title').length > 0) {if  (document.getElementsByClassName('page-title')[0].innerHTML == 'Kassas') {document.getElementsByClassName('page-title')[0].innerHTML = 'Kassa'}}
         if (document.getElementById('select2-mp-wc-pickup-point-shipping-select-container') !== null) {
             if (document.getElementById('select2-mp-wc-pickup-point-shipping-select-container').innerHTML == 'Выберите место доставки') {
@@ -440,7 +440,7 @@ if (window.location.pathname.substr(0, 13) == '/ee/checkout/') {
 if (window.location.pathname.substr(0, 13) == '/en/checkout/') {
 	function checkoutLoopEn() {
 	    setTimeout(checkoutLoopEn, 5);
-	    
+
 	                if  (document.getElementsByClassName('woocommerce-error').length > 0) {
                 for (var i = 0; i < document.getElementsByClassName('woocommerce-error')[0].getElementsByTagName('li').length; i++) {
                     if  (document.getElementsByClassName('woocommerce-error')[0].getElementsByTagName('li')[i].innerText == 'Выберите место для доставки.') {
@@ -464,7 +464,7 @@ if (window.location.pathname.substr(0, 13) == '/en/checkout/') {
 
                 }
             }
-            
+
         if (document.getElementById('select2-mp-wc-pickup-point-shipping-select-container') !== null) {
             if (document.getElementById('select2-mp-wc-pickup-point-shipping-select-container').innerHTML == 'Выберите место доставки') {
                 document.getElementById('select2-mp-wc-pickup-point-shipping-select-container').innerHTML = 'Select delivery location';
@@ -473,13 +473,13 @@ if (window.location.pathname.substr(0, 13) == '/en/checkout/') {
         if (document.getElementsByClassName('select2-results__option').length > 0) {document.getElementsByClassName('select2-results__option')[0].getElementsByTagName('span')[0].innerHTML = 'Select delivery location';}
         if (document.getElementById('place_order') !== null) {
 			if (document.getElementById('place_order').innerHTML !== 'Confirm the order') {
-			    
+
 			    document.getElementsByClassName('woocommerce-shipping-totals shipping')[0].getElementsByTagName('th')[0].innerHTML = 'Delivery';
 			    document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[0].innerHTML = 'Finland';
 			    document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[1].innerHTML = 'Latvia';
 			    document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[2].innerHTML = 'Estonia';
 			    document.getElementsByClassName('montonio-payments-country-dropdown')[0].getElementsByTagName('option')[3].innerHTML = 'Lithuania';
-			    
+
 			    document.getElementsByClassName('wc_payment_method payment_method_montonio_payments')[0].getElementsByTagName('label')[0].innerHTML = 'Payment via bank'+document.getElementById('montonio-payments-checkout-logo').outerHTML;
 			    document.getElementById('montonio-payments-checkout-logo').setAttribute('style', 'transform: translate(10px, 0px);');
 			    document.getElementsByClassName('product-name')[0].innerHTML = 'Product';
@@ -510,18 +510,18 @@ if (window.location.pathname.substr(0, 13) == '/en/checkout/') {
 			  return date;
 			}
 			function setCookie(name, value, options = {}) {
-	
+
 			  options = {
 			    path: '/',
 			    ...options
 			  };
-	
+
 			  if (options.expires instanceof Date) {
 			    options.expires = options.expires.toUTCString();
 			  }
-	
+
 			  let updatedCookie = encodeURIComponent(name) + "=" + encodeURIComponent(value);
-	
+
 			  for (let optionKey in options) {
 			    updatedCookie += "; " + optionKey;
 			    let optionValue = options[optionKey];
@@ -529,7 +529,7 @@ if (window.location.pathname.substr(0, 13) == '/en/checkout/') {
 			      updatedCookie += "=" + optionValue;
 			   }
 			  }
-	
+
 			  document.cookie = updatedCookie;
 			}
 			function getCookie(name) {
@@ -543,20 +543,20 @@ if (window.location.pathname.substr(0, 13) == '/en/checkout/') {
 					    'max-age': -1
 					  })
 					}
-					
-					
-					
-					
-					
-					
-					
-					
-			
-					
-					
-					
+
+
+
+
+
+
+
+
+
+
+
+
 				</script>
-				
+
 
 <!-- <script>
 if (window.location.pathname == '/ee/checkout/') {
@@ -626,12 +626,12 @@ window.onload = setTimeout(function(){
                 if (document.getElementsByClassName(\'next page-numbers\').length > 0) {
                     if (document.getElementsByClassName(\'next page-numbers\')[0].innerHTML == \'Next\') {
                         document.getElementsByClassName(\'next page-numbers\')[0].innerHTML = \'Järgmine\';
-                    }   
+                    }
                 }
                 if (document.getElementsByClassName(\'prev page-numbers\').length > 0) {
                     if (document.getElementsByClassName(\'prev page-numbers\')[0].innerHTML == \'Previous\') {
                         document.getElementsByClassName(\'prev page-numbers\')[0].innerHTML = \'Eelmine\';
-                    }   
+                    }
                 }
                 if (document.getElementsByClassName(\'page-title\')[0].innerHTML == \'Nothing Found\') {
                     document.getElementsByClassName(\'page-title\')[0].innerHTML = \'Midagi pole leitud\';
@@ -694,12 +694,12 @@ window.onload = setTimeout(function(){
             document.getElementsByClassName('header-cart')[0].getElementsByTagName('a')[0].setAttribute('href', '/en/cart/');
         }
     }, 100);
-    
+
 if (window.location.pathname.substr(0, 4) == '/ee/') {
     window.onload = function() {
         if (document.getElementsByClassName('header-cart__link header-favorite header-favorite--vis js-header-favorite').length > 0) {document.getElementsByClassName('header-cart__link header-favorite header-favorite--vis js-header-favorite')[0].setAttribute('href', '/ee/favorite/')};
         if (document.getElementsByClassName('header-cart__link header-compare header-compare--vis js-header-compare').length > 0) {document.getElementsByClassName('header-cart__link header-compare header-compare--vis js-header-compare')[0].setAttribute('href', '/ee/compare/')};
-        
+
     }
 	function eeItemLoop() {
 	    if (document.getElementsByClassName('breadcrumb-item').length > 0) {
