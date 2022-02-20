@@ -122,18 +122,18 @@ $advertising = theme_container()->get(Advertising::class);
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script>
 	const swiper = new Swiper('.swiper-container', {
-		speed: 400,
+		speed: 600,
 		autoplay: false,
 		pauseOnMouseEnter: true,
 		//   disableOnInteraction: true
 	});
-	// const swiperSlider = document.querySelector('.swiper-container')
-	// swiperSlider.addEventListener('mouseover', () => {
-	// 	swiper.autoplay.stop()
-	// })
-	// swiperSlider.addEventListener('mouseleave', () => {
-	// 	swiper.autoplay.start()
-	// })
+	const swiperSlider = document.querySelector('.swiper-container')
+	swiperSlider.addEventListener('mouseover', () => {
+		swiper.autoplay.stop()
+	})
+	swiperSlider.addEventListener('mouseleave', () => {
+		swiper.autoplay.start()
+	})
 </script>
 
 
