@@ -59,18 +59,22 @@ span, ul, li, ol, a, p, table, button {
   border: none;
 }
 
-.header-compare::before, .header-favorite::before {
+.header-compare::before,
+.header-favorite::before {
   display: none;
 }
-.header-compare svg, .header-favorite svg {
+.header-compare svg,
+.header-favorite svg {
   width: 24px;
   height: 24px;
 }
-.header-compare svg:hover, .header-favorite svg:hover {
+.header-compare svg:hover,
+.header-favorite svg:hover {
   fill: #f43c33;
   color: #f43c33;
 }
-.header-compare svg:hover path, .header-favorite svg:hover path {
+.header-compare svg:hover path,
+.header-favorite svg:hover path {
   fill: #f43c33;
   color: #f43c33;
   stroke: #f43c33;
@@ -78,6 +82,11 @@ span, ul, li, ol, a, p, table, button {
 
 .header-favorite svg {
   margin: 8px 0 0 0;
+}
+@media screen and (max-width: 991px) {
+  .header-favorite svg {
+    margin: 2px 0 0 0;
+  }
 }
 
 .site-header-inner {
@@ -91,6 +100,14 @@ span, ul, li, ol, a, p, table, button {
     position: absolute;
     display: block;
   }
+}
+
+.header-cart-only-hamburger,
+.header-compare-only-hamburger,
+.header-favorite-only-hamburger {
+  position: static;
+  display: block;
+  margin: 20px 10px 0 10px;
 }
 
 .humburger span:nth-child(2) {
@@ -109,6 +126,13 @@ span, ul, li, ol, a, p, table, button {
     position: static;
     display: block;
   }
+}
+
+.mobile-icon-wrapper {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */
