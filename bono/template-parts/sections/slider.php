@@ -144,7 +144,6 @@ if ( $slide_items ): ?>
             <?php endforeach ?>
         </div>
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-next swiper-button-white"></div>
-        <div class="swiper-button-prev swiper-button-white"></div>
+
     </div>
 <?php endif ?>

@@ -135,4 +135,12 @@ span, ul, li, ol, a, p, table, button {
   justify-content: center;
 }
 
+.card-slider-container, .card-slider--type-media .card-slider__image {
+  min-height: 620px;
+}
+
+.card-slider--type-media .card-slider__image {
+  background-repeat: no-repeat;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -123,17 +123,17 @@ $advertising = theme_container()->get(Advertising::class);
 <script>
 	const swiper = new Swiper('.swiper-container', {
 		speed: 400,
-		autoplay: true,
+		autoplay: false,
 		pauseOnMouseEnter: true,
 		//   disableOnInteraction: true
 	});
-	const swiperSlider = document.querySelector('.swiper-container')
-	swiperSlider.addEventListener('mouseover', () => {
-		swiper.autoplay.stop()
-	})
-	swiperSlider.addEventListener('mouseleave', () => {
-		swiper.autoplay.start()
-	})
+	// const swiperSlider = document.querySelector('.swiper-container')
+	// swiperSlider.addEventListener('mouseover', () => {
+	// 	swiper.autoplay.stop()
+	// })
+	// swiperSlider.addEventListener('mouseleave', () => {
+	// 	swiper.autoplay.start()
+	// })
 </script>
 
 
