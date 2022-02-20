@@ -584,7 +584,10 @@ if (getCookie('eeCheck') == 'ee' && window.location.pathname == '/checkout/') {
 				    }
 				</script>
 <script src="/wp-content/themes/bono_child/newfunctions.js"></script>
-
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
 </head>
 <body <?php body_class(); ?>>
 

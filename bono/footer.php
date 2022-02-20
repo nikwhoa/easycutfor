@@ -32,5 +32,6 @@ $advertising = theme_container()->get( Advertising::class );
 <?php get_template_part( 'template-parts/footer/init-slider' ) ?>
 
 
+
 </body>
 </html>

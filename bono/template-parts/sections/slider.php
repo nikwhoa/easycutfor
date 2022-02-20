@@ -148,4 +148,3 @@ if ( $slide_items ): ?>
         <div class="swiper-button-prev swiper-button-white"></div>
     </div>
 <?php endif ?>
-
