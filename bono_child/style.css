@@ -104,10 +104,17 @@ span, ul, li, ol, a, p, table, button {
 
 .header-cart-only-hamburger,
 .header-compare-only-hamburger,
-.header-favorite-only-hamburger {
-  position: static;
-  display: block;
+.header-favorite-only-hamburger,
+.header-search-only-hamburger {
+  position: static !important;
+  display: block !important;
   margin: 20px 10px 0 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .header-cart__link:hover {
+    background: transparent;
+  }
 }
 
 .humburger span:nth-child(2) {
@@ -120,11 +127,18 @@ span, ul, li, ol, a, p, table, button {
   font-size: 1.5em;
 }
 
+@media screen and (max-width: 991px) {
+  .header-search {
+    position: static;
+  }
+}
 @media screen and (max-width: 767px) {
   .header-search {
     margin-left: 1rem;
-    position: static;
+    position: absolute;
     display: block;
+    right: 130px;
+    top: 5px;
   }
 }
 

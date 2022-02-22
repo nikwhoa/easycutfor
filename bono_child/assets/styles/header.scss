@@ -50,13 +50,21 @@
 
 .header-cart-only-hamburger,
 .header-compare-only-hamburger,
-.header-favorite-only-hamburger {
+.header-favorite-only-hamburger,
+.header-search-only-hamburger {
     // right: 70px;
     // top: 90px;
-    position: static;
-    display: block;
+    position: static !important;
+    display: block !important;
     margin: 20px 10px 0 10px;
 
+}
+.header-cart__link {
+    &:hover {
+        @media screen and (max-width: 767px) {
+            background: transparent;
+        }
+    }
 }
 
 .humburger span:nth-child(2) {
@@ -70,11 +78,17 @@
 }
 
 .header-search {
+    @media screen and (max-width: 991px) {
+        position: static;
+    }
     @media screen and (max-width: 767px) {
         margin-left: 1rem;
-        position: static;
+        position: absolute;
         display: block;
+        right: 130px;
+        top: 5px;
     }
+
 }
 
 .main-navigation-inner {
