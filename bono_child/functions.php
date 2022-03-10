@@ -183,3 +183,10 @@ function customizing_on_hold_email_subject($formated_subject, $order)
     return __('Ваш заказ был успешно создан!', "woocommerce");
   }
 }
+
+add_filter( 'woocommerce_subcategory_count_html', 'filter_function_name_4815', 10, 2 );
+function filter_function_name_4815( $html, $category ){
+	// filter...
+
+	return false;
+}

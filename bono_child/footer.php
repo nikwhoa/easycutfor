@@ -123,7 +123,7 @@ $advertising = theme_container()->get(Advertising::class);
 <script>
 	const swiper = new Swiper('.swiper-container', {
 		speed: 600,
-		autoplay: false,
+		autoplay: true,
 		pauseOnMouseEnter: true,
 		//   disableOnInteraction: true
 	});

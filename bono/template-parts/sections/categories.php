@@ -28,10 +28,12 @@ do_action( 'bono_section_category_query_before' );
                 <div class="section-block__title"><?php echo $section_header_text ?></div>
             </div>
         <?php endif ?>
-        <div class="shop-grid shop-grid--columns-<?php echo esc_attr( $columns ) ?>">
+        <!-- old code: columns-<?php /*  echo esc_attr( $columns )  */ ?>  -->
+        <div class="shop-grid shop-grid--columns-2">
             <?php foreach ( $product_categories as $category ) {
                 wc_get_template( 'content-product_cat.php', [
                     'category' => $category,
+                    'count' => false
                 ] );
             } ?>
         </div>

@@ -107,3 +107,38 @@
 .header-mobile-items-container {
     // display: none !important;
 }
+.top-menu ul li.menu-item-has-children > a::after, .top-menu ul li.menu-item-has-children > span::after {
+    content: "↦";
+    position: absolute;
+    top: 4px;
+}
+.top-menu ul li > a:hover, .top-menu ul li > span:hover {
+    color: $_gray_bright;
+}
+.lang-item {
+    display: block;
+    position: absolute;
+    a {
+        color: $_gray_bright !important;
+    }
+
+}
+
+.current-lang a {
+    color: $_black !important;
+}
+.lang-item-ee {
+    left: 60%;
+    padding-left: 0px !important;
+}
+.lang-item-ru {
+    left: 60%;
+}
+.top-menu ul li .sub-menu {
+    @media (min-width: 992px) {
+        top: 55px;
+    }
+}
+.header-search--compact form {
+    top: 125px;
+}

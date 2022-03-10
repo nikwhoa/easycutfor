@@ -149,12 +149,123 @@ span, ul, li, ol, a, p, table, button {
   justify-content: center;
 }
 
-.card-slider-container, .card-slider--type-media .card-slider__image {
+.top-menu ul li.menu-item-has-children > a::after, .top-menu ul li.menu-item-has-children > span::after {
+  content: "↦";
+  position: absolute;
+  top: 4px;
+}
+
+.top-menu ul li > a:hover, .top-menu ul li > span:hover {
+  color: #999999;
+}
+
+.lang-item {
+  display: block;
+  position: absolute;
+}
+.lang-item a {
+  color: #999999 !important;
+}
+
+.current-lang a {
+  color: #282828 !important;
+}
+
+.lang-item-ee {
+  left: 60%;
+  padding-left: 0px !important;
+}
+
+.lang-item-ru {
+  left: 60%;
+}
+
+@media (min-width: 992px) {
+  .top-menu ul li .sub-menu {
+    top: 55px;
+  }
+}
+
+.header-search--compact form {
+  top: 125px;
+}
+
+.card-slider-container,
+.card-slider--type-media .card-slider__image {
   min-height: 620px;
 }
 
 .card-slider--type-media .card-slider__image {
   background-repeat: no-repeat;
+}
+
+.card-slider--type-media .card-slider__title span {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #F8F8F8;
+  background: transparent;
+  font-weight: normal;
+}
+
+.card-slider--type-media .card-slider__excerpt span {
+  background: transparent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #F8F8F8;
+  padding: 0.2em 0.2em;
+}
+@media screen and (max-width: 991px) {
+  .card-slider--type-media .card-slider__excerpt span {
+    font-size: 36px;
+  }
+}
+
+.card-slider__excerpt {
+  max-width: 524px;
+  width: 100%;
+}
+
+.card-slider__button {
+  margin-left: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 0;
+}
+@media screen and (max-width: 991px) {
+  .card-slider__button {
+    margin-left: 10px;
+  }
+}
+
+.product-category a {
+  box-shadow: none;
+}
+
+.woocommerce-loop-category__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product-category a:hover {
+  color: #5696AF;
+}
+
+.product-category a img {
+  margin-bottom: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

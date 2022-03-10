@@ -13,6 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @var WP_Term $category
  */
 ?>
+
 <div <?php wc_product_cat_class( '', $category ); ?>>
     <?php
     /**
@@ -35,7 +36,6 @@ if ( ! defined( 'ABSPATH' ) ) {
      * @hooked woocommerce_template_loop_category_title - 10
      */
     do_action( 'woocommerce_shop_loop_subcategory_title', $category );
-
     /**
      * woocommerce_after_subcategory_title hook.
      */
