@@ -8,26 +8,39 @@ $_white: #F8F8F8;
     font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
+
 h1 {
     font-family: inherit;
     font-size: 3.5rem;
 }
+
 h2 {
     font-family: inherit;
     font-size: 2.5rem;
 }
+
 h3 {
     font-family: inherit;
     font-size: 1.75rem;
 }
+
 h4 {
     font-family: inherit;
     font-size: 1.1rem;
 }
-span, ul, li, ol, a, p, table, button {
+
+span,
+ul,
+li,
+ol,
+a,
+p,
+table,
+button {
     font-family: inherit;
     font-size: 1rem;
 }
+
 .bono_child {
     &__btn {
         cursor: pointer;
@@ -38,14 +51,76 @@ span, ul, li, ol, a, p, table, button {
         border: 1px solid $_black;
         color: $_white;
         padding: .5rem 2.5rem;
+
         &:hover {
             background: #ffffff;
             color: $_black;
         }
+
         &:disabled {
             background: $_gray_bright-second;
             color: $_gray_bright;
             border: none;
         }
     }
+}
+
+.post-card--vertical {
+    @media (min-width: 992px) {
+        height: fit-content;
+    }
+}
+
+.big-adv {
+    // height: 863px;
+    padding-bottom: 15px;
+    .post-card__thumbnail-image {
+        height: 760px;
+        @media (max-width: 992px) {
+            height: 400px;
+        }
+    }
+}
+
+.post-card__title {
+    text-align: center;
+}
+
+.post-card__title a {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    font-family: 'Nunito';
+    font-size: normal;
+    text-transform: uppercase;
+    color: #5696AF;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.post-card {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    padding-bottom: 15px;
+
+}
+.post-card__thumbnail {
+    border: 10px solid #ECECEC;
+}
+.post-card__description {
+    width: 85%;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    /* or 24px */
+    text-align: center;
+
+    /* gray */
+    color: #6A6A6A;
+
+
 }
