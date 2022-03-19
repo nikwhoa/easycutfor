@@ -12,7 +12,28 @@ $advertising = theme_container()->get(Advertising::class);
 <!--.site-content-inner-->
 </div>
 <!--.site-content-->
+<?php
+$args = array(
+	'p' => 2593,
+);
 
+$latest_posts = get_posts($args);
+if ($latest_posts) {
+	foreach ($latest_posts as $post) :
+		setup_postdata($post); ?>
+		<div class="seo-section-wrapper">
+			<section class="main-page-seo-section">
+				<h2><?php the_title(); ?></h2>
+				<div class="seo-section-description">
+					<?php the_content(); ?>
+				</div>
+			</section>
+		</div>
+<?php
+	endforeach;
+	wp_reset_postdata();
+}
+?>
 <div class="block-after-site <?php echo apply_filters('bono_site_content_classes', 'fixed') ?>"><?php echo $advertising->show_ad('after_site_content'); ?></div>
 
 <?php do_action(THEME_SLUG . '_after_site_content') ?>

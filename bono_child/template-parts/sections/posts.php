@@ -150,7 +150,6 @@ $section_header_text = apply_filters('bono_homepage_constructor:posts_section_he
     <!--.post-cards-->
 
 </div>
-
 <!--.section-posts-->
 
 <?php do_action('bono_section_post_query_after');

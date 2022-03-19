@@ -66,6 +66,10 @@ button {
 }
 
 .post-card--vertical {
+    @media (min-width: 576px) {
+        height: fit-content;
+    }
+
     @media (min-width: 992px) {
         height: fit-content;
     }
@@ -74,8 +78,10 @@ button {
 .big-adv {
     // height: 863px;
     padding-bottom: 15px;
+
     .post-card__thumbnail-image {
         height: 760px;
+
         @media (max-width: 992px) {
             height: 400px;
         }
@@ -93,8 +99,9 @@ button {
     font-family: 'Nunito';
     font-size: normal;
     text-transform: uppercase;
-    color: #5696AF;
+
     &:hover {
+        color: #5696AF;
         text-decoration: underline;
     }
 }
@@ -105,9 +112,11 @@ button {
     padding-bottom: 15px;
 
 }
+
 .post-card__thumbnail {
     border: 10px solid #ECECEC;
 }
+
 .post-card__description {
     width: 85%;
     margin: 0 auto;
@@ -115,7 +124,8 @@ button {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
-
+    height: 50px;
+    overflow: hidden;
     /* or 24px */
     text-align: center;
 
@@ -123,4 +133,119 @@ button {
     color: #6A6A6A;
 
 
+}
+
+.section-block__header {
+    display: none;
+}
+
+.main-page-post-wrapper {
+    margin-top: -500px;
+    padding: 20px 20px 0 20px;
+    flex: 0 0 calc(50% - 40px);
+    display: -webkit-box;
+    -webkit-line-clamp: 14;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 460px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: calc(50% - 40px);
+    font-size: 16px;
+    line-height: 150%;
+    /* or 24px */
+    text-align: center;
+    /* gray */
+    color: #6A6A6A;
+
+    @media (max-width: 576px) {
+        margin: 0;
+        height: fit-content;
+        display: block;
+        overflow: visible;
+        padding-bottom: 10px;
+        min-width: 100%;
+    }
+
+    h2 {
+
+
+        a {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 140%;
+            /* identical to box height, or 25px */
+            text-align: center;
+            text-transform: uppercase;
+            color: #282828;
+            text-decoration: none;
+
+            &:hover {
+                color: #5696AF;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.main-page-post-wrapper p {
+    margin: 20px 0;
+}
+
+.main-page-seo-section {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding: 60px 15px;
+    // height: 352px;
+
+    h2 {
+        color: #282828;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 120%;
+        text-transform: uppercase;
+    }
+
+    .seo-section-description {
+        width: 100%;
+        font-size: 16px;
+        color: #6A6A6A;
+        line-height: 150%;
+
+        @media (min-width: 992px) {
+            width: 65%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        max-width: 625px;
+    }
+
+    @media (min-width: 992px) {
+        max-width: 870px;
+
+    }
+
+    @media (min-width: 1200px) {
+        max-width: 1100px;
+        padding: 60px 0;
+        background-image: url('/wp-content/themes/bono_child/assets/images/seo-bg.png');
+    }
+}
+
+.seo-section-wrapper {
+    width: 100%;
+    background: #ECECEC;
+}
+.site-content {
+    padding-bottom: 20px;
+    @media (min-width: 1200px) {
+        padding-bottom: 0;
+    }
 }
