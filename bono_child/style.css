@@ -244,6 +244,30 @@ button {
   }
 }
 
+.site-footer-container {
+  position: static;
+}
+
+.home {
+  margin-bottom: 0 !important;
+}
+
+.scrolltop {
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  background: #282828;
+  border-radius: 2px;
+}
+
+.scrolltop::before {
+  content: none;
+}
+
+.scrolltop-down-arrow {
+  margin-top: -30px;
+}
+
 .header-compare::before,
 .header-favorite::before {
   display: none;
