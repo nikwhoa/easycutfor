@@ -268,6 +268,55 @@ button {
   margin-top: -30px;
 }
 
+.site-footer {
+  background-color: #FFFFFF !important;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+  padding-top: 0;
+}
+.site-footer .footer-widget li a {
+  color: #6A6A6A;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.site-footer-inner {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  padding-right: 0;
+}
+@media (min-width: 1400px) {
+  .site-footer-inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .site-footer-inner {
+    flex-direction: row;
+  }
+}
+
+.site-footer-logo {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin-right: 150px;
+}
+.site-footer-logo img {
+  margin-top: 40px;
+}
+@media (min-width: 992px) {
+  .site-footer-logo img {
+    margin-top: -120px;
+  }
+}
+
+.site-footer, .site-footer a, .site-footer {
+  color: #6A6A6A !important;
+}
+
 .header-compare::before,
 .header-favorite::before {
   display: none;

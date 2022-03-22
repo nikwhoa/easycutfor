@@ -267,9 +267,53 @@ button {
     background: #282828;
     border-radius: 2px;
 }
+
 .scrolltop::before {
     content: none;
 }
+
 .scrolltop-down-arrow {
     margin-top: -30px;
+}
+
+.site-footer {
+    background-color: #FFFFFF !important;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    padding-top: 0;
+    .footer-widget li a {
+        color: $_gray;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+    }
+}
+
+.site-footer-inner {
+    @media (min-width: 1400px) {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 992px) {
+        flex-direction: row;
+    }
+    padding-left: 0;
+    padding-right: 0;
+}
+.site-footer-logo {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+
+    img {
+        margin-top: 40px;
+        @media (min-width: 992px) {
+            margin-top: -120px;
+        }
+    }
+}
+.site-footer, .site-footer a, .site-footer {
+    color: #6A6A6A !important;
 }

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * ****************************************************************************
  *
@@ -15,26 +16,29 @@
  * @package bono
  */
 
-$wpshop_core = theme_container()->get( \Wpshop\Core\Core::class );
+$wpshop_core = theme_container()->get(\Wpshop\Core\Core::class);
 ?>
 
-<?php do_action( THEME_SLUG . '_before_footer' ) ?>
+<?php do_action(THEME_SLUG . '_before_footer') ?>
 
 <div class="site-footer-container">
 
-    <?php get_template_part( 'template-parts/navigation/footer' ) ?>
+    <?php get_template_part('template-parts/navigation/footer') ?>
 
-    <?php if ( $wpshop_core->is_show_element( 'footer' ) ): ?>
-        <footer id="colophon" class="site-footer site-footer--style-gray <?php $wpshop_core->the_option( 'footer_width' ) ?>">
-            <div class="site-footer-inner <?php $wpshop_core->the_option( 'footer_inner_width' ) ?>">
+    <?php if ($wpshop_core->is_show_element('footer')) : ?>
+        <footer id="colophon" class="site-footer site-footer--style-gray <?php $wpshop_core->the_option('footer_width') ?>">
+            <div class="site-footer-inner <?php $wpshop_core->the_option('footer_inner_width') ?>">
+                <div class="site-footer-logo">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-logo.png" alt="">
+                </div>
+                <?php get_template_part('template-parts/footer/widgets') ?>
 
-                <?php get_template_part( 'template-parts/footer/widgets' ) ?>
-
-                <?php get_template_part( 'template-parts/footer/bottom' ) ?>
+                <?php get_template_part('template-parts/footer/bottom') ?>
 
             </div>
-        </footer><!--.site-footer-->
+        </footer>
+        <!--.site-footer-->
     <?php endif ?>
 </div>
 
-<?php do_action( THEME_SLUG . '_after_footer' ) ?>
+<?php do_action(THEME_SLUG . '_after_footer') ?>
