@@ -29,12 +29,24 @@ $wpshop_core = theme_container()->get(\Wpshop\Core\Core::class);
         <footer id="colophon" class="site-footer site-footer--style-gray <?php $wpshop_core->the_option('footer_width') ?>">
             <div class="site-footer-inner <?php $wpshop_core->the_option('footer_inner_width') ?>">
                 <div class="site-footer-logo">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-logo.png" alt="">
+                    <picture>
+                        <source media="(max-width: 520px)" srcset="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-mobile-logo.jpg">
+                        <img width="370" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/footer-logo.png" alt="logo">
+                    </picture>
+
                 </div>
+
                 <?php get_template_part('template-parts/footer/widgets') ?>
 
                 <?php get_template_part('template-parts/footer/bottom') ?>
-
+            </div>
+            <div class="copyright">
+                <div class="all-rights">
+                    EasyCut.for 2021 © All rights Reserved
+                </div>
+                <div class="site-developed">
+                    Сайт разработал
+                </div>
             </div>
         </footer>
         <!--.site-footer-->
