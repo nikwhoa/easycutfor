@@ -379,6 +379,7 @@ button {
     margin-left: 15px;
     padding-bottom: 0;
     margin-bottom: 0;
+
     @media (min-width: 768px) {
         padding-top: 40px;
         padding-bottom: 0;
@@ -453,6 +454,66 @@ address {
         max-width: 1390px;
     }
 }
+
 .site-footer {
     padding-bottom: 15px;
+}
+
+.main-navigation ul li .sub-menu {
+    display: block;
+}
+
+.main-navigation ul li {
+    @media (max-width: 992px) {
+        text-align: center;
+    }
+}
+
+.lang-item-ru,
+.lang-item-ee {
+    @media (max-width: 992px) {
+        left: unset !important;
+    }
+}
+
+#menu-item-1395 {
+    @media (max-width: 992px) {
+        a[href*="shop"] {
+            display: none;
+        }
+    }
+}
+#menu-item-1393 {
+    @media (max-width: 992px) {
+        a[href*="shop"] {
+            display: none;
+        }
+    }
+}
+.site-header-inner {
+    @media (min-width: 768px) {
+        justify-content: flex-end;
+    }
+}
+.site-branding {
+
+    @media (min-width: 768px) {
+        position: absolute;
+        left: 0;
+    }
+    @media (min-width: 992px) {
+        position: static;
+    }
+}
+.main-navigation ul li.menu-item-has-children:after {
+    display: none;
+}
+
+.main-navigation ul li .sub-menu li>a {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+
+    color: #282828;
 }

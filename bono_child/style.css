@@ -447,6 +447,65 @@ address {
   padding-bottom: 15px;
 }
 
+.main-navigation ul li .sub-menu {
+  display: block;
+}
+
+@media (max-width: 992px) {
+  .main-navigation ul li {
+    text-align: center;
+  }
+}
+
+@media (max-width: 992px) {
+  .lang-item-ru,
+.lang-item-ee {
+    left: unset !important;
+  }
+}
+
+@media (max-width: 992px) {
+  #menu-item-1395 a[href*=shop] {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  #menu-item-1393 a[href*=shop] {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-header-inner {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 768px) {
+  .site-branding {
+    position: absolute;
+    left: 0;
+  }
+}
+@media (min-width: 992px) {
+  .site-branding {
+    position: static;
+  }
+}
+
+.main-navigation ul li.menu-item-has-children:after {
+  display: none;
+}
+
+.main-navigation ul li .sub-menu li > a {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #282828;
+}
+
 .header-compare::before,
 .header-favorite::before {
   display: none;
