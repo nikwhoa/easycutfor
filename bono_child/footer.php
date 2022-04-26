@@ -177,6 +177,25 @@ if ($latest_posts) {
 	swiperSlider.addEventListener('mouseleave', () => {
 		swiper.autoplay.start()
 	})
+
+	// hide logo if search has been clicked
+	const searchIcon = document.querySelector('.js-header-search-ico');
+	const siteLogotype = document.querySelector('.site-logotype');
+
+	window.addEventListener('DOMContentLoaded', (event) => {
+		let a = getComputedStyle(siteLogotype)
+		searchIcon.addEventListener('click', (e) => {
+			if (window.outerWidth <= 600) {
+				if (a.visibility == 'visible') {
+					siteLogotype.style.visibility = 'hidden';
+				} else {
+					siteLogotype.style.visibility = 'visible';
+				}
+			}
+			//  ? siteLogotype.style.display = 'none'  : siteLogotype.style.display = 'block'
+			// TODO: hide logo if click on the search
+		})
+	});
 </script>
 
 

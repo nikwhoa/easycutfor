@@ -633,53 +633,8 @@ address {
   }
 }
 
-.mobile-icon-wrapper > .header-search--compact form.show {
-  top: 117px;
-  left: 50%;
-  width: 80%;
-}
-
-@media (max-width: 992px) {
-  .main-navigation ul li.menu-item-has-children:before {
-    display: none;
-  }
-}
-
 .header-search--compact form {
-  top: -5px;
-  left: -90px;
-  width: 140px;
-}
-@media (min-width: 375px) {
-  .header-search--compact form {
-    left: -130px;
-  }
-}
-@media (min-width: 425px) {
-  .header-search--compact form {
-    left: -130px;
-    width: 190px;
-  }
-}
-@media (min-width: 480px) {
-  .header-search--compact form {
-    left: -200px;
-    width: 190px;
-  }
-}
-@media (min-width: 768px) {
-  .header-search--compact form {
-    left: 360px;
-    width: 200px;
-    top: 0;
-  }
-}
-@media (min-width: 992px) {
-  .header-search--compact form {
-    top: -5px;
-    width: 300px;
-    left: -160px;
-  }
+  top: 125px;
 }
 
 .card-slider-container,
@@ -744,15 +699,8 @@ address {
   box-shadow: none;
 }
 
-.product-category.product {
-  height: 403px;
-  justify-content: center;
-}
-
-.product-category a img {
-  width: 435px;
-  height: 300px;
-  object-fit: contain;
+.product-category .product {
+  height: 400px;
 }
 
 .woocommerce-loop-category__title {

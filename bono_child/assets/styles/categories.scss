@@ -1,6 +1,16 @@
 .product-category a {
     box-shadow: none;
 }
+.product-category.product {
+    height: 403px;
+    justify-content: center;
+}
+
+.product-category a img {
+    width: 435px;
+    height: 300px;
+    object-fit: contain;
+}
 
 .woocommerce-loop-category__title {
     font-weight: 600;
