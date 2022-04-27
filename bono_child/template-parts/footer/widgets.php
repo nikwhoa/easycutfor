@@ -17,9 +17,10 @@
 
 $wpshop_core = theme_container()->get( \Wpshop\Core\Core::class );
 
-$footer_widgets = $wpshop_core->get_option( 'footer_widgets' );
+// $footer_widgets = $wpshop_core->get_option( 'footer_widgets' );
+$footer_widgets = 3;
 if ( $footer_widgets > 5 ) {
-    $footer_widgets = 5;
+    $footer_widgets = 3;
 }
 
 if ( $footer_widgets > 0 ) {

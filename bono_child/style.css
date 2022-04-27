@@ -131,6 +131,17 @@ button {
   color: #6A6A6A;
 }
 
+.shop-grid {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (min-width: 768px) {
+  .section-block {
+    padding-top: 20px;
+  }
+}
+
 .section-block__header {
   display: none;
 }
@@ -156,14 +167,14 @@ button {
   /* gray */
   color: #6A6A6A;
 }
-@media (max-width: 576px) {
+@media (max-width: 992px) {
   .main-page-post-wrapper {
-    margin: 0;
+    margin: 0 20px;
     height: fit-content;
     display: block;
     overflow: visible;
     padding-bottom: 10px;
-    min-width: 100%;
+    max-width: initial;
   }
 }
 .main-page-post-wrapper h2 a {
@@ -212,27 +223,48 @@ button {
     width: 65%;
   }
 }
-@media (min-width: 768px) {
-  .main-page-seo-section {
-    max-width: 625px;
-  }
-}
 @media (min-width: 992px) {
   .main-page-seo-section {
-    max-width: 870px;
+    max-width: 100%;
+    background-image: url("/wp-content/themes/bono_child/assets/images/seo-bg.png");
   }
 }
 @media (min-width: 1200px) {
   .main-page-seo-section {
     max-width: 1100px;
-    padding: 60px 0;
-    background-image: url("/wp-content/themes/bono_child/assets/images/seo-bg.png");
+    padding: 60px 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .post-card--vertical {
+    max-width: initial;
+  }
+}
+
+@media (max-width: 992px) {
+  .post-cards--vertical {
+    display: block;
   }
 }
 
 .seo-section-wrapper {
   width: 100%;
   background: #ECECEC;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 576px) {
+  .seo-section-wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .seo-section-wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
 }
 
 .site-content {
@@ -329,6 +361,12 @@ button {
   }
 }
 
+@media (min-width: 992px) {
+  .fixed.site-footer-inner {
+    max-width: 1230px;
+  }
+}
+
 .footer-widgets .widget_nav_menu ul.menu li a {
   margin-bottom: 0.25em;
   margin-top: 0;
@@ -362,7 +400,7 @@ button {
 
 .footer-widgets {
   margin-top: 30px;
-  margin-left: 15px;
+  margin-left: 30px;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -371,6 +409,7 @@ button {
     padding-top: 40px;
     padding-bottom: 0;
     margin-bottom: 30px;
+    margin-left: 15px;
   }
 }
 
@@ -412,7 +451,7 @@ address {
 }
 @media (max-width: 767px) {
   .copyright {
-    padding-left: 15px;
+    padding-left: 30px;
     flex-direction: column;
   }
   .copyright div {
@@ -422,24 +461,24 @@ address {
 @media (min-width: 768px) {
   .copyright {
     max-width: 720px;
-    padding-right: 80px;
+    padding-right: 60px;
   }
 }
 @media (min-width: 992px) {
   .copyright {
     max-width: 960px;
-    padding-right: 155px;
+    padding-right: 30px;
   }
 }
 @media (min-width: 1200px) {
   .copyright {
     max-width: 1190px;
-    padding-right: 200px;
+    padding-right: 85px;
   }
 }
 @media (min-width: 1400px) {
   .copyright {
-    max-width: 1390px;
+    max-width: 1230px;
   }
 }
 
@@ -503,6 +542,37 @@ address {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
+  color: #282828;
+}
+
+.fixed.site-content {
+  max-width: 1140px;
+}
+
+body {
+  background-color: #ffffff !important;
+}
+
+.more-link {
+  padding: 12px 50px;
+  display: inline-block;
+  margin: 0 auto;
+  background: #282828;
+  text-align: center;
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #F8F8F8;
+  border: 1px solid #282828;
+  box-sizing: border-box;
+  transition: all 0.4s ease;
+}
+.more-link:hover {
+  background: #ffffff;
   color: #282828;
 }
 
@@ -684,7 +754,7 @@ address {
 
 .card-slider-container,
 .card-slider--type-media .card-slider__image {
-  min-height: 620px;
+  min-height: 700px;
 }
 
 .card-slider--type-media .card-slider__image {
@@ -769,6 +839,10 @@ address {
 
 .product-category a img {
   margin-bottom: 25px;
+}
+
+.product:hover {
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -37,15 +37,13 @@ $wpshop_core = theme_container()->get(\Wpshop\Core\Core::class);
                 </div>
 
                 <?php get_template_part('template-parts/footer/widgets') ?>
-
-                <?php get_template_part('template-parts/footer/bottom') ?>
             </div>
             <div class="copyright">
                 <div class="all-rights">
-                    EasyCut.for 2021 © All rights Reserved
+                    EasyCut.for 2022 © All rights Reserved
                 </div>
                 <div class="site-developed">
-                    Сайт разработал
+                    Сайт разработал <a href="https://lexweb.studio/">lexweb.studio</a>
                 </div>
             </div>
         </footer>
