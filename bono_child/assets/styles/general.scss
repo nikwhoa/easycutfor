@@ -134,15 +134,18 @@ button {
 
 
 }
+
 .shop-grid {
     margin-left: 0;
     margin-right: 0;
 }
+
 .section-block {
     @media (min-width: 768px) {
         padding-top: 20px;
     }
 }
+
 .section-block__header {
     display: none;
 }
@@ -167,9 +170,17 @@ button {
     text-align: center;
     /* gray */
     color: #6A6A6A;
+    @media (max-width: 575px) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    @media (min-width: 576px) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 
     @media (max-width: 992px) {
-        margin: 0 20px;
+        margin-top: 0;
         height: fit-content;
         display: block;
         overflow: visible;
@@ -475,24 +486,28 @@ address {
     }
 
     @media (min-width: 768px) {
-        max-width: 720px;
-        padding-right: 60px;
+        // max-width: 720px;
+        padding-left: 55px;
+        padding-right: 55px;
+        // padding-right: 60px;
 
     }
 
     @media (min-width: 992px) {
-        max-width: 960px;
-        padding-right: 30px;
+        // max-width: 960px;
+        // padding-right: 30px;
     }
 
     @media (min-width: 1200px) {
-        max-width: 1190px;
-        padding-right: 85px;
+        max-width: 1050px;
+        padding-left: initial;
+        padding-right: initial;
+        // padding-right: 85px;
     }
 
-    @media (min-width: 1400px) {
-        max-width: 1230px;
-    }
+    // @media (min-width: 1400px) {
+    //     max-width: 1230px;
+    // }
 }
 
 .site-footer {
@@ -563,6 +578,10 @@ address {
     color: #282828;
 }
 
+.fixed.site-header-inner {
+    max-width: 1140px;
+}
+
 .fixed.site-content {
     max-width: 1140px;
 }
@@ -588,6 +607,7 @@ body {
     border: 1px solid #282828;
     box-sizing: border-box;
     transition: all 0.4s ease;
+
     &:hover {
         background: #ffffff;
         color: #282828;
